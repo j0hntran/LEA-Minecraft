@@ -1,0 +1,187 @@
+[14:34:02] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[14:34:03] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\Clearlag.jar'...
+[14:34:03] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins\ProtocolLib.jar'...
+[14:34:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\Clearlag.jar' in 687ms.
+[14:34:05] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins\ProtocolLib.jar' in 2066ms.
+[14:34:11] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:34:14] [ServerMain/INFO]: Loaded 1175 recipes
+[14:34:14] [ServerMain/INFO]: Loaded 1276 advancements
+[14:34:14] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[14:34:14] [Server thread/INFO]: Loading properties
+[14:34:14] [Server thread/INFO]: This server is running Paper version 1.20.6-148-ver/1.20.6@20f5165 (2024-07-02T15:37:33Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[14:34:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:34:15] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:34:16] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[14:34:16] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[14:34:16] [Server thread/INFO]: Default game type: SURVIVAL
+[14:34:16] [Server thread/INFO]: Generating keypair
+[14:34:16] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:34:16] [Server thread/INFO]: Using default channel type
+[14:34:16] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[14:34:16] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[14:34:16] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.2.0-SNAPSHOT-679
+[14:34:16] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.6) has not yet been tested! Proceed with caution.
+[14:34:19] [Server thread/ERROR]: [ProtocolLib] Assuming package version: v1_20_R1
+[14:34:19] [Server thread/ERROR]:   [ProtocolLib] INTERNAL ERROR: Cannot load ProtocolLib.
+  If this problem hasn't already been reported, please open a ticket
+  at https://github.com/dmulloy2/ProtocolLib/issues with the following data:
+  Stack Trace:
+  java.lang.IllegalArgumentException: Unable to find a field that matches {modifiers=[required: 10000, banned: 1000], type={ type input instanceof interface java.util.Map }}
+  	at ProtocolLib.jar//com.comphenix.protocol.reflect.FuzzyReflection.getField(FuzzyReflection.java:352)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.createNewRegister(PacketRegistry.java:183)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.initialize(PacketRegistry.java:334)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.getClientPacketTypes(PacketRegistry.java:369)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.PacketFilterManager.<init>(PacketFilterManager.java:120)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.PacketFilterBuilder.build(PacketFilterBuilder.java:121)
+  	at ProtocolLib.jar//com.comphenix.protocol.ProtocolLib.onLoad(ProtocolLib.java:183)
+  	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59)
+  	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18)
+  	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39)
+  	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36)
+  	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:532)
+  	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:286)
+  	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136)
+  	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+  	at java.base/java.lang.Thread.run(Thread.java:1583)
+  Dump:
+  Parameters: 
+    [NULL]
+  Sender:
+    com.comphenix.protocol.ProtocolLib@154d97b[
+      statistics=<null>
+      packetTask=<null>
+      tickCounter=0
+      configExpectedMod=-1
+      updater=com.comphenix.protocol.updater.SpigotUpdater@2e1974da
+      redirectHandler=<null>
+      scheduler=com.comphenix.protocol.scheduler.DefaultScheduler@921ef63
+      commandProtocol=<null>
+      commandPacket=<null>
+      commandFilter=<null>
+      packetLogging=<null>
+      skipDisable=false
+      isEnabled=false
+      loader=io.papermc.paper.plugin.manager.DummyBukkitPluginLoader@688ecb71
+      server=CraftServer{serverName=Paper,serverVersion=1.20.6-148-20f5165,minecraftVersion=1.20.6}
+      file=plugins\.paper-remapped\ProtocolLib.jar
+      description=org.bukkit.plugin.PluginDescriptionFile@5d932c5b
+      pluginMeta=org.bukkit.plugin.PluginDescriptionFile@5d932c5b
+      dataFolder=plugins\ProtocolLib
+      classLoader=PluginClassLoader{plugin=ProtocolLib v5.2.0-SNAPSHOT-679, pluginEnabled=false, url=plugins\.paper-remapped\ProtocolLib.jar}
+      naggable=true
+      newConfig=YamlConfiguration[path='', root='YamlConfiguration']
+      configFile=plugins\ProtocolLib\config.yml
+      logger=com.destroystokyo.paper.utils.PaperPluginLogger@58610a89
+      lifecycleEventManager=io.papermc.paper.plugin.lifecycle.event.PaperLifecycleEventManager@55411f32
+      allowsLifecycleRegistration=true
+    ]
+  Version:
+    ProtocolLib v5.2.0-SNAPSHOT-679
+  Java Version:
+    21.0.2
+  Server:
+    1.20.6-148-20f5165 (MC: 1.20.6)
+
+[14:34:19] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.74
+[14:34:19] [Server thread/INFO]: [ClearLag] Loading server plugin ClearLag v3.2.2
+[14:34:19] [Server thread/INFO]: [AuthMe] Loading server plugin AuthMe v5.6.0-bCUSTOM
+[14:34:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:34:19] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
+[14:34:19] [Server thread/ERROR]: ******************************************************
+[14:34:19] [Server thread/ERROR]: *** ProtocolLib does not support plugin reloaders! ***
+[14:34:19] [Server thread/ERROR]: *** Please use the built-in reload command!        ***
+[14:34:19] [Server thread/ERROR]: ******************************************************
+[14:34:19] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
+[14:34:19] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:34:19] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:34:19] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:34:19] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:34:19] [Server thread/INFO]: Preparing level "world"
+[14:34:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:34:21] [Server thread/INFO]: Time elapsed: 1240 ms
+[14:34:21] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[14:34:21] [Server thread/INFO]: Time elapsed: 144 ms
+[14:34:21] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[14:34:21] [Server thread/INFO]: Time elapsed: 80 ms
+[14:34:21] [Server thread/INFO]: [spark] Enabling spark v1.10.74
+[14:34:22] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[14:34:22] [Server thread/INFO]: [spark] Starting background profiler...
+[14:34:22] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[14:34:22] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[14:34:22] [Server thread/INFO]: [ClearLag] Using version-adapter: LatestVersionAdapter
+[14:34:22] [Server thread/INFO]: [ClearLag] Config not found. Generating default config...
+[14:34:22] [Server thread/INFO]: [ClearLag] Loading modules...
+[14:34:22] [Server thread/WARN]: [ClearLag] Clearlag failed to use the internal TPS tracker during initialization. Reverted to estimation... (Index 3 out of bounds for length 3)
+[14:34:22] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[14:34:22] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[14:34:22] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[14:34:22] [Thread-5/WARN]: [ClearLag] Clearlag failed to check for updates - bukkit may be down
+[14:34:22] [Thread-5/WARN]: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+[14:34:22] [Thread-5/WARN]: 	at Clearlag.jar//me.minebuilders.clearlag.Util.getBukkitVersion(Util.java:105)
+[14:34:22] [Thread-5/WARN]: 	at Clearlag.jar//me.minebuilders.clearlag.BukkitUpdater.updateAvailable(BukkitUpdater.java:32)
+[14:34:22] [Thread-5/WARN]: 	at Clearlag.jar//me.minebuilders.clearlag.BukkitUpdater.run(BukkitUpdater.java:82)
+[14:34:22] [Thread-5/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[14:34:22] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[14:34:23] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[14:34:23] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[14:34:23] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[14:34:23] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[14:34:24] [Server thread/INFO]: Running delayed init tasks
+[14:34:24] [Server thread/INFO]: Done (9.642s)! For help, type "help"
+[14:34:24] [Server thread/INFO]: Timings Reset
+[14:34:24] [Craft Scheduler Thread - 1 - AuthMe/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[14:34:24] [Craft Scheduler Thread - 1 - AuthMe/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[14:34:24] [Craft Scheduler Thread - 1 - AuthMe/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[14:34:24] [Craft Scheduler Thread - 1 - AuthMe/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (The system cannot find the file specified)
+[14:35:16] [User Authenticator #0/INFO]: UUID of player IristTheLiems is 544c3f45-de80-3527-947e-f4dc3079faea
+[14:35:17] [Server thread/INFO]: IristTheLiems joined the game
+[14:35:17] [Server thread/INFO]: IristTheLiems[/127.0.0.1:4090] logged in with entity id 142 at ([world]292.6852286794835, 72.0, 263.21666615372766)
+[14:35:25] [Craft Scheduler Thread - 5 - AuthMe/INFO]: [AuthMe] IristTheLiems logged in 127.0.0.1
+[14:35:37] [Server thread/INFO]: IristTheLiems issued server command: /clearlag:lagg
+[14:35:39] [Server thread/INFO]: IristTheLiems issued server command: /lagg clear
+[14:35:42] [Server thread/INFO]: IristTheLiems issued server command: /lagg clear
+[14:35:47] [Server thread/INFO]: IristTheLiems issued server command: /tps
+[14:35:54] [Server thread/INFO]: IristTheLiems issued server command: /spark
+[14:35:56] [Server thread/INFO]: IristTheLiems issued server command: /spark help
+[14:36:02] [Server thread/INFO]: IristTheLiems issued server command: /spart ping
+[14:36:05] [Server thread/INFO]: IristTheLiems issued server command: /spark ping
+[14:36:09] [Server thread/INFO]: IristTheLiems issued server command: /spark ping --player
+[14:36:11] [Server thread/INFO]: IristTheLiems issued server command: /spark ping --player
+[14:36:19] [Server thread/INFO]: IristTheLiems issued server command: /spark
+[14:36:21] [Server thread/INFO]: IristTheLiems issued server command: /spark gc
+[14:37:13] [Server thread/INFO]: Stopping the server
+[14:37:13] [Server thread/INFO]: Stopping server
+[14:37:13] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
+[14:37:13] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[14:37:13] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
+[14:37:13] [Server thread/INFO]: [ClearLag] Disabling ClearLag v3.2.2
+[14:37:13] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[14:37:13] [Server thread/INFO]: [spark] Disabling spark v1.10.74
+[14:37:13] [Server thread/INFO]: Saving players
+[14:37:14] [Server thread/INFO]: IristTheLiems lost connection: Server closed
+[14:37:14] [Server thread/INFO]: IristTheLiems left the game
+[14:37:14] [Server thread/INFO]: Saving worlds
+[14:37:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:37:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[14:37:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[14:37:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Saved 1655 block chunks, 1096 entity chunks, 18 poi chunks in world 'world' in 2.16s
+[14:37:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:37:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.04s
+[14:37:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:37:16] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[14:37:16] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.04s
+[14:37:16] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:37:16] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:37:16] [Server thread/INFO]: Flushing Chunk IO
+[14:37:16] [Server thread/INFO]: Closing Thread Pool
+[14:37:16] [Server thread/INFO]: Closing Server

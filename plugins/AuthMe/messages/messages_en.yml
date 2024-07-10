@@ -1,0 +1,160 @@
+# List of global tags:
+# %nl% - Goes to new line.
+# %username% - Replaces the username of the player receiving the message.
+# %displayname% - Replaces the nickname (and colors) of the player receiving the message.
+
+# Registration
+registration:
+    register_request: '&3Vui lòng đăng ký trên máy chủ bằng lệnh: /register <mật khẩu> <xác nhận mật khẩu>'
+    command_usage: '&cCách dùng: /register <mật khẩu> <xác nhận mật khẩu>'
+    reg_only: '&4Chỉ những người dùng đã đăng ký mới có thể tham gia máy chủ! Vui lòng truy cập https://en.wikipedia.org/wiki/Example.com để tự đăng ký!'
+    kicked_admin_registered: 'Quản trị viên vừa đăng ký cho bạn; vui lòng đăng nhập lại.'
+    success: '&2Đăng ký thành công!'
+    disabled: '&cĐăng ký trong trò chơi đã bị vô hiệu hóa!'
+    name_taken: '&cBạn đã đăng ký tên người dùng này rồi!'
+
+# Lỗi Mật Khẩu Khi Đăng Ký (Password errors on registration)
+
+password:
+    match_error: '&cMật khẩu không khớp, vui lòng kiểm tra lại!'
+    name_in_password: '&cBạn không thể dùng tên làm mật khẩu, vui lòng chọn mật khẩu khác...'
+    unsafe_password: '&cMật khẩu được chọn không an toàn, vui lòng chọn mật khẩu khác...'
+    forbidden_characters: '&4Mật khẩu của bạn chứa các ký tự bất hợp pháp. Ký tự được phép: %valid_chars'
+    wrong_length: '&cMật khẩu của bạn quá ngắn hoặc quá dài! Vui lòng thử lại với mật khẩu khác!'
+
+# Đăng Nhập (Login)
+
+login:
+    command_usage: '&cCách dùng: /login <mật khẩu>'
+    wrong_password: '&cSai mật khẩu!'
+    success: '&2Đăng nhập thành công!'
+    login_request: '&cVui lòng đăng nhập bằng lệnh: /login <mật khẩu>'
+    timeout_error: '&4Thời gian chờ đăng nhập vượt quá, bạn đã bị đá khỏi máy chủ, vui lòng thử lại!'
+
+# Lỗi (Errors)
+
+error:
+    unregistered_user: '&cNgười dùng này chưa đăng ký!'
+    denied_command: '&cĐể sử dụng lệnh này, bạn phải được xác thực!'
+    denied_chat: '&cĐể trò chuyện, bạn phải được xác thực!'
+    not_logged_in: '&cBạn chưa đăng nhập!'
+    tempban_max_logins: '&cBạn đã bị cấm tạm thời vì đăng nhập sai mật khẩu quá nhiều lần.'
+    max_registration: '&cBạn đã vượt quá số lượng đăng ký tối đa (%reg_count/%max_acc %reg_names) cho kết nối của bạn!'
+    no_permission: '&4Bạn không có quyền thực hiện hành động này!'
+    unexpected_error: '&4Đã xảy ra lỗi không mong muốn, vui lòng liên hệ với quản trị viên!'
+    kick_for_vip: '&3Một người chơi VIP đã tham gia máy chủ khi máy chủ đã đầy!'
+    logged_in: '&cBạn đã đăng nhập rồi!'
+    kick_unresolved_hostname: '&cĐã xảy ra lỗi: tên máy chủ người chơi chưa được giải quyết!'
+
+# AntiBot
+
+antibot:
+    kick_antibot: 'Chế độ bảo vệ AntiBot đã được kích hoạt! Bạn phải đợi một vài phút trước khi tham gia máy chủ.'
+    auto_enabled: '&4[AntiBotService] AntiBot được kích hoạt do số lượng kết nối lớn!'
+    auto_disabled: '&2[AntiBotService] AntiBot đã bị vô hiệu hóa sau %m phút!'
+
+unregister:
+    success: '&cHủy đăng ký thành công!'
+    command_usage: '&cCách dùng: /unregister <mật khẩu>'
+
+# Other messages
+misc:
+  accounts_owned_self: 'You own %count accounts:'
+  accounts_owned_other: 'The player %name has %count accounts:'
+  account_not_activated: '&cYour account isn''t activated yet, please check your emails!'
+  password_changed: '&2Password changed successfully!'
+  logout: '&2Logged out successfully!'
+  reload: '&2Configuration and database have been reloaded correctly!'
+  usage_change_password: '&cUsage: /changepassword <oldPassword> <newPassword>'
+
+# Session messages
+session:
+  invalid_session: '&cYour IP has been changed and your session data has expired!'
+  valid_session: '&2Logged-in due to Session Reconnection.'
+
+# Error messages when joining
+on_join_validation:
+  name_length: '&4Your username is either too short or too long!'
+  characters_in_name: '&4Your username contains illegal characters. Allowed chars: %valid_chars'
+  country_banned: '&4Your country is banned from this server!'
+  not_owner_error: 'You are not the owner of this account. Please choose another name!'
+  kick_full_server: '&4The server is full, try again later!'
+  same_nick_online: '&4The same username is already playing on the server!'
+  invalid_name_case: 'You should join using username %valid, not %invalid.'
+  same_ip_online: 'A player with the same IP is already in game!'
+  quick_command: 'You used a command too fast! Please, join the server again and wait more before using any command.'
+
+# Email
+email:
+  usage_email_add: '&cUsage: /email add <email> <confirmEmail>'
+  usage_email_change: '&cUsage: /email change <oldEmail> <newEmail>'
+  new_email_invalid: '&cInvalid new email, try again!'
+  old_email_invalid: '&cInvalid old email, try again!'
+  invalid: '&cInvalid email address, try again!'
+  added: '&2Email address successfully added to your account!'
+  request_confirmation: '&cPlease confirm your email address!'
+  changed: '&2Email address changed correctly!'
+  email_show: '&2Your current email address is: &f%email'
+  incomplete_settings: 'Error: not all required settings are set for sending emails. Please contact an admin.'
+  already_used: '&4The email address is already being used'
+  send_failure: 'The email could not be sent. Please contact an administrator.'
+  no_email_for_account: '&2You currently don''t have email address associated with this account.'
+  add_email_request: '&3Please add your email to your account with the command: /email add <yourEmail> <confirmEmail>'
+  change_password_expired: 'You cannot change your password using this command anymore.'
+  email_cooldown_error: '&cAn email was already sent recently. You must wait %time before you can send a new one.'
+  add_not_allowed: '&cAdding email was not allowed.'
+  change_not_allowed: '&cChanging email was not allowed.'
+
+# Password recovery by email
+recovery:
+  forgot_password_hint: '&3Forgot your password? Please use the command: /email recovery <yourEmail>'
+  command_usage: '&cUsage: /email recovery <Email>'
+  email_sent: '&2Recovery email sent successfully! Please check your email inbox!'
+  code:
+    code_sent: 'A recovery code to reset your password has been sent to your email.'
+    incorrect: 'The recovery code is not correct! You have %count tries remaining.'
+    tries_exceeded: 'You have exceeded the maximum number attempts to enter the recovery code. Use "/email recovery [email]" to generate a new one.'
+    correct: 'Recovery code entered correctly!'
+    change_password: 'Please use the command /email setpassword <new password> to change your password immediately.'
+
+# Captcha
+captcha:
+  usage_captcha: '&3To log in you have to solve a captcha code, please use the command: /captcha %captcha_code'
+  wrong_captcha: '&cWrong captcha, please type "/captcha %captcha_code" into the chat!'
+  valid_captcha: '&2Captcha code solved correctly!'
+  captcha_for_registration: 'To register you have to solve a captcha first, please use the command: /captcha %captcha_code'
+  register_captcha_valid: '&2Valid captcha! You may now register with /register'
+
+# Verification code
+verification:
+  code_required: '&3This command is sensitive and requires an email verification! Check your inbox and follow the email''s instructions.'
+  command_usage: '&cUsage: /verification <code>'
+  incorrect_code: '&cIncorrect code, please type "/verification <code>" into the chat, using the code you received by email'
+  success: '&2Your identity has been verified! You can now execute all commands within the current session!'
+  already_verified: '&2You can already execute every sensitive command within the current session!'
+  code_expired: '&3Your code has expired! Execute another sensitive command to get a new code!'
+  email_needed: '&3To verify your identity you need to link an email address with your account!!'
+
+# Two-factor authentication
+two_factor:
+  code_created: '&2Your secret code is %code. You can scan it from here %url'
+  confirmation_required: 'Please confirm your code with /2fa confirm <code>'
+  code_required: 'Please submit your two-factor authentication code with /2fa code <code>'
+  already_enabled: 'Two-factor authentication is already enabled for your account!'
+  enable_error_no_code: 'No 2fa key has been generated for you or it has expired. Please run /2fa add'
+  enable_success: 'Successfully enabled two-factor authentication for your account'
+  enable_error_wrong_code: 'Wrong code or code has expired. Please run /2fa add'
+  not_enabled_error: 'Two-factor authentication is not enabled for your account. Run /2fa add'
+  removed_success: 'Successfully removed two-factor auth from your account'
+  invalid_code: 'Invalid code!'
+
+# Time units
+time:
+  second: 'second'
+  seconds: 'seconds'
+  minute: 'minute'
+  minutes: 'minutes'
+  hour: 'hour'
+  hours: 'hours'
+  day: 'day'
+  days: 'days'
